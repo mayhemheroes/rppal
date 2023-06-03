@@ -1,5 +1,0 @@
-project: rppal
-target: target
-
-cmds:
-  - cmd: /target

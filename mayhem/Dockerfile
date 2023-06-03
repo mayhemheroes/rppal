@@ -18,4 +18,5 @@ RUN cd ./fuzz && cargo +nightly hfuzz build
 # Move Fuzzers to a clean image
 FROM ubuntu:20.04
 
-COPY --from=builder rppal/fuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/target /
+COPY --from=builder rppal/fuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/user_to_uid /
+COPY --from=builder rppal/fuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/group_to_gid /

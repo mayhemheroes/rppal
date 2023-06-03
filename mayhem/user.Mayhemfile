@@ -1,0 +1,5 @@
+project: rppal
+user_to_uid: user_to_uid
+
+cmds:
+  - cmd: /user_to_uid

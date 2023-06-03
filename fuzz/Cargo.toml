@@ -15,5 +15,9 @@ honggfuzz = "0.5.55"
 members = ["."]
 
 [[bin]]
-name = "target"
-path = "fuzz_targets/target.rs"
+name = "group_to_gid"
+path = "fuzz_targets/group_to_gid.rs"
+
+[[bin]]
+name = "user_to_uid"
+path = "fuzz_targets/user_to_uid.rs"

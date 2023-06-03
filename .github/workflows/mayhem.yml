@@ -59,7 +59,8 @@ jobs:
       fail-fast: false
       matrix:
         mayhemfile:
-          - mayhem/Mayhemfile
+          - mayhem/user.Mayhemfile
+          - mayhem/group.Mayhemfile
 
     steps:
       - uses: actions/checkout@v3
