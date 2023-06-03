@@ -1,5 +1,5 @@
 project: rppal
-group_to_gid: group_to_gid
+target: group_to_gid
 
 cmds:
   - cmd: /group_to_gid
