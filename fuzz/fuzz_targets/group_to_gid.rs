@@ -1,5 +1,5 @@
 use honggfuzz::fuzz;
-use rppal::pwm::sysfs::user_to_uid;
+use rppal::pwm::sysfs::group_to_gid;
 
 fn main() {
     // Define the fuzzing loop
