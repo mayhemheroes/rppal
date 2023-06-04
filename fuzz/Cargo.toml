@@ -1,0 +1,23 @@
+[package]
+name = "rppal-fuzz"
+version = "0.0.0"
+edition = "2021"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+rppal = { path = ".." }
+honggfuzz = "0.5.55"
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "group_to_gid"
+path = "fuzz_targets/group_to_gid.rs"
+
+[[bin]]
+name = "user_to_uid"
+path = "fuzz_targets/user_to_uid.rs"
